@@ -18,13 +18,13 @@ body {
   margin-right: auto;
   left: 0;
   right: 0;
-  width:40%;
-}
-
-.opaque{
-  opacity:1;
+  width:35rem;
 }
 
 .key{
   opacity:0.5;
+}
+
+.opaque{
+  opacity:1;
 }

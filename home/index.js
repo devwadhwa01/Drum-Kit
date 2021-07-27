@@ -1,14 +1,43 @@
-// for (var i = 0; i < document.querySelectorAll(".part").length; i++) {
-//   document.querySelectorAll(".part")[i].addEventListener("click", function() {
-//     var letter = document.querySelectorAll(".part")[i].classList[0];
-//     playSound(letter);
-//   });
-// }
+  document.querySelectorAll(".key")[0].addEventListener("click", function() {
+    var letter = document.querySelectorAll(".key")[0].classList[0];
+    letter = letter.substring(0, 1);
+    playSound(letter);
+    pressed(letter);
+  });
+  document.querySelectorAll(".key")[1].addEventListener("click", function() {
+    var letter = document.querySelectorAll(".key")[1].classList[0];
+    letter = letter.substring(0, 1);
+    playSound(letter);
+    pressed(letter);
+  });
+  document.querySelectorAll(".key")[2].addEventListener("click", function() {
+    var letter = document.querySelectorAll(".key")[2].classList[0];
+    letter = letter.substring(0, 1);
+    playSound(letter);
+    pressed(letter);
+  });
+  document.querySelectorAll(".key")[3].addEventListener("click", function() {
+    var letter = document.querySelectorAll(".key")[3].classList[0];
+    letter = letter.substring(0, 1);
+    playSound(letter);
+    pressed(letter);
+  });
+  document.querySelectorAll(".key")[4].addEventListener("click", function() {
+    var letter = document.querySelectorAll(".key")[4].classList[0];
+    letter = letter.substring(0, 1);
+    playSound(letter);
+    pressed(letter);
+  });
+  document.querySelectorAll(".key")[5].addEventListener("click", function() {
+    var letter = document.querySelectorAll(".key")[5].classList[0];
+    letter = letter.substring(0, 1);
+    playSound(letter);
+    pressed(letter);
+  });
 
 document.addEventListener("keydown", function(event) {
   playSound(event.key);
   pressed(event.key);
-  icon(event.key);
 });
 
 function playSound(key) {
@@ -42,16 +71,11 @@ function playSound(key) {
   }
 }
 
-function pressed(currentKey){
-  document.querySelector("."+currentKey).classList.add("opaque");
-  setTimeout(function(){
-    document.querySelector("."+currentKey).classList.remove("opaque");
-  },300);
-}
-
-function icon(currentKey){
-    document.querySelector("."+currentKey+"-icon").classList.add("opaque");
-  setTimeout(function(){
-    document.querySelector("."+currentKey+"-icon").classList.remove("opaque");
-  },300);
+function pressed(currentKey) {
+  document.querySelector("." + currentKey).classList.add("opaque");
+  document.querySelector("." + currentKey + "-icon").classList.add("opaque");
+  setTimeout(function() {
+    document.querySelector("." + currentKey).classList.remove("opaque");
+    document.querySelector("." + currentKey + "-icon").classList.remove("opaque");
+  }, 200);
 }
