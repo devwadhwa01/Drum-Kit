@@ -1,5 +1,4 @@
 body {
-  text-align: center;
   background-color: #222831;
 }
 
@@ -8,6 +7,7 @@ body {
   font-family: 'Nosifer', cursive;
   padding-top: 20px;
   font-size: 5rem;
+  text-align: center;
 }
 
 .part {
@@ -19,12 +19,32 @@ body {
   left: 0;
   right: 0;
   width:35rem;
+  text-align: center;
 }
 
 .key{
   opacity:0.5;
 }
 
+.key-icons{
+  margin: 6% 20% ;
+}
 .opaque{
   opacity:1;
+}
+
+.legend{
+  padding-left: 15px;
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 2rem;
+}
+
+.row{
+  margin-right:0;
+  color: #EEEEEE;
+  padding: 10px 10px;
+}
+
+.entire{
+  margin-left: 18%;
 }

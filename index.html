@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <!-- Custom CSS -->
@@ -18,8 +19,8 @@
 
 <body>
   <h1 class="heading">Drum Kit</h1>
-  <div class="container-fluid">
-    <div class="">
+  <div class="row entire">
+    <div class="col">
       <img class="w part" src="resources/left-tom.png" alt="Tom1">
       <img class="a part" src="resources/right-tom.png" alt="Tom2">
       <img class="s part" src="resources/floor-tom.png" alt="FloorTom">
@@ -27,13 +28,31 @@
       <img class="j part" src="resources/snare.png" alt="Snare">
       <img class="k part" src="resources/crash.png" alt="Crash">
     </div>
-    <div class="">
-      <img class="w-icon key" src="https://img.icons8.com/color/48/000000/w-key.png" />
-      <img class="a-icon key" src="https://img.icons8.com/color/48/000000/a-key.png" />
-      <img class="s-icon key" src="https://img.icons8.com/color/48/000000/s-key.png" />
-      <img class="d-icon key" src="https://img.icons8.com/color/48/000000/d-key.png" />
-      <img class="j-icon key" src="https://img.icons8.com/color/48/000000/j-key.png" />
-      <img class="k-icon key" src="https://img.icons8.com/color/48/000000/k-key.png" />
+    <div class="key-icons col">
+      <div class="row">
+        <img class="w-icon key" src="https://img.icons8.com/color/48/000000/w-key.png" />
+        <h2 class="legend">Left Tom</h2>
+      </div>
+      <div class="row">
+        <img class="a-icon key" src="https://img.icons8.com/color/48/000000/a-key.png" />
+        <h2 class="legend">Right Tom</h2>
+      </div>
+      <div class="row">
+        <img class="s-icon key" src="https://img.icons8.com/color/48/000000/s-key.png" />
+        <h2 class="legend">Floor Tom</h2>
+      </div>
+      <div class="row">
+        <img class="d-icon key" src="https://img.icons8.com/color/48/000000/d-key.png" />
+        <h2 class="legend">Bass</h2>
+      </div>
+      <div class="row">
+        <img class="j-icon key" src="https://img.icons8.com/color/48/000000/j-key.png" />
+        <h2 class="legend">Snare</h2>
+      </div>
+      <div class="row">
+        <img class="k-icon key" src="https://img.icons8.com/color/48/000000/k-key.png" />
+        <h2 class="legend">Crash</h2>
+      </div>
     </div>
   </div>
   <!-- Custom JS -->
