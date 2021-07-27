@@ -27,7 +27,7 @@ body {
 }
 
 .key-icons{
-  margin: 6% 20% ;
+  margin: 6% 10% 0 20%;
 }
 .opaque{
   opacity:1;
@@ -46,5 +46,9 @@ body {
 }
 
 .entire{
-  margin-left: 18%;
+  margin-left: 17%;
+}
+
+a:hover{
+  text-decoration: none;
 }
