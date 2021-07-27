@@ -10,20 +10,21 @@ body {
   font-size: 5rem;
 }
 
-.drums {
-  padding-top: 20px;
-  opacity: 0.5;
-}
-
 .part {
+  padding-top: 80px;
   opacity: 0.5;
   position: absolute;
   margin-left: auto;
   margin-right: auto;
   left: 0;
   right: 0;
+  width:40%;
 }
 
 .opaque{
   opacity:1;
+}
+
+.key{
+  opacity:0.5;
 }
