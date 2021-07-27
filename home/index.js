@@ -35,47 +35,47 @@
     pressed(letter);
   });
 
-document.addEventListener("keydown", function(event) {
-  playSound(event.key);
-  pressed(event.key);
-});
+  document.addEventListener("keydown", function(event) {
+    playSound(event.key);
+    pressed(event.key);
+  });
 
-function playSound(key) {
-  switch (key) {
-    case "w":
-      var audio = new Audio("resources/left-tom.mp3");
-      audio.play();
-      break;
-    case "a":
-      var audio = new Audio("resources/right-tom.mp3");
-      audio.play();
-      break;
-    case "s":
-      var audio = new Audio("resources/floor-tom.mp3");
-      audio.play();
-      break;
-    case "d":
-      var audio = new Audio("resources/bass.mp3");
-      audio.play();
-      break;
-    case "j":
-      var audio = new Audio("resources/snare.mp3");
-      audio.play();
-      break;
-    case "k":
-      var audio = new Audio("resources/crash.mp3");
-      audio.play();
-      break;
-    default:
-      console.log(key);
+  function playSound(key) {
+    switch (key) {
+      case "w":
+        var audio = new Audio("resources/left-tom.mp3");
+        audio.play();
+        break;
+      case "a":
+        var audio = new Audio("resources/right-tom.mp3");
+        audio.play();
+        break;
+      case "s":
+        var audio = new Audio("resources/floor-tom.mp3");
+        audio.play();
+        break;
+      case "d":
+        var audio = new Audio("resources/bass.mp3");
+        audio.play();
+        break;
+      case "j":
+        var audio = new Audio("resources/snare.mp3");
+        audio.play();
+        break;
+      case "k":
+        var audio = new Audio("resources/crash.mp3");
+        audio.play();
+        break;
+      default:
+        console.log(key);
+    }
   }
-}
 
-function pressed(currentKey) {
-  document.querySelector("." + currentKey).classList.add("opaque");
-  document.querySelector("." + currentKey + "-icon").classList.add("opaque");
-  setTimeout(function() {
-    document.querySelector("." + currentKey).classList.remove("opaque");
-    document.querySelector("." + currentKey + "-icon").classList.remove("opaque");
-  }, 200);
-}
+  function pressed(currentKey) {
+    document.querySelector("." + currentKey).classList.add("opaque");
+    document.querySelector("." + currentKey + "-icon").classList.add("opaque");
+    setTimeout(function() {
+      document.querySelector("." + currentKey).classList.remove("opaque");
+      document.querySelector("." + currentKey + "-icon").classList.remove("opaque");
+    }, 200);
+  }
